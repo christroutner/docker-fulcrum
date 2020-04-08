@@ -20,8 +20,8 @@ USER safeuser
 
 RUN mkdir blockchain
 
-# Install Redis. TODO: Make this a separate container.
-
+COPY bin/Fulcrum Fulcrum
+COPY testnet.conf testnet.conf
 
 CMD ["./Fulcrum", "mainnet.conf"]
 

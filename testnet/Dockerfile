@@ -6,6 +6,13 @@ RUN apt-get update -y
 #Set the working directory to be the home directory
 WORKDIR /home/safeuser
 
+COPY bin/Fulcrum Fulcrum
+COPY mainnet.conf mainnet.conf
+COPY certs/fullchain.pem fullchain.pem
+COPY certs/privkey.pem privkey.pem
+
+RUN chown -R safeuser *
+
 # Switch to user account.
 USER safeuser
 # Prep 'sudo' commands.
@@ -20,5 +27,5 @@ COPY testnet.conf testnet.conf
 
 CMD ["./Fulcrum", "testnet.conf"]
 
-#COPY dummyapp.js dummyapp.js
+#COPY bin/dummyapp.js dummyapp.js
 #CMD ["node", "dummyapp.js"]
