@@ -1,0 +1,10 @@
+fulcrum-mainnet:
+  build: .
+  dockerfile: Dockerfile
+  container_name: fulcrum-mainnet
+  volumes:
+    - ./blockchain:/home/safeuser/blockchain
+  ports:
+    - 50001:50001
+    - 60002:60002
+    

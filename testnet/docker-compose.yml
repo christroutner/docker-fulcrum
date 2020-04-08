@@ -1,0 +1,7 @@
+fulcrum-testnet:
+  build: .
+  dockerfile: Dockerfile
+  container_name: fulcrum-testnet
+  volumes:
+    - ./blockchain:/home/safeuser/blockchain
+    
