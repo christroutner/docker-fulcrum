@@ -7,7 +7,7 @@ RUN apt-get update -y
 WORKDIR /home/safeuser
 
 COPY bin/Fulcrum Fulcrum
-COPY mainnet.conf mainnet.conf
+COPY testnet.conf testnet.conf
 COPY certs/fullchain.pem fullchain.pem
 COPY certs/privkey.pem privkey.pem
 

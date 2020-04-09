@@ -3,5 +3,4 @@ fulcrum-testnet:
   dockerfile: Dockerfile
   container_name: fulcrum-testnet
   volumes:
-    - ./blockchain:/home/safeuser/blockchain
-    
+    - /mnt/data/bitcoin.com/blockchain-data/fulcrum/testnet/blockchain:/home/safeuser/blockchain
