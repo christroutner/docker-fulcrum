@@ -4,3 +4,6 @@ fulcrum-testnet:
   container_name: fulcrum-testnet
   volumes:
     - /mnt/data/bitcoin.com/blockchain-data/fulcrum/testnet/blockchain:/home/safeuser/blockchain
+  ports:
+    - 50001:50001
+    - 50002:50002
