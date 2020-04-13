@@ -21,7 +21,7 @@ USER safeuser
 RUN mkdir blockchain
 
 COPY bin/Fulcrum Fulcrum
-COPY testnet.conf testnet.conf
+COPY mainnet.conf mainnet.conf
 
 CMD ["./Fulcrum", "mainnet.conf"]
 
