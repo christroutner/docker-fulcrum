@@ -8,10 +8,10 @@ WORKDIR /home/safeuser
 
 COPY bin/Fulcrum Fulcrum
 COPY testnet.conf testnet.conf
-#COPY certs/fullchain.pem fullchain.pem
-#COPY certs/privkey.pem privkey.pem
-COPY certs/server.crt server.crt
-COPY certs/server.key server.key
+COPY certs/fullchain.pem fullchain.pem
+COPY certs/privkey.pem privkey.pem
+#COPY certs/server.crt server.crt
+#COPY certs/server.key server.key
 
 RUN chown -R safeuser *
 
