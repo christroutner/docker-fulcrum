@@ -8,8 +8,13 @@ WORKDIR /home/safeuser
 
 COPY bin/Fulcrum Fulcrum
 COPY mainnet.conf mainnet.conf
-COPY certs/fullchain.pem fullchain.pem
-COPY certs/privkey.pem privkey.pem
+
+# Copy certs
+#COPY certs/fullchain.pem fullchain.pem
+#COPY certs/privkey.pem privkey.pem
+COPY certs/server.crt server.crt
+COPY certs/server.csr server.csr
+COPY certs/server.key server.key
 
 RUN chown -R safeuser *
 
@@ -23,7 +28,7 @@ RUN mkdir blockchain
 COPY bin/Fulcrum Fulcrum
 COPY mainnet.conf mainnet.conf
 
-CMD ["./Fulcrum", "mainnet.conf"]
+#CMD ["./Fulcrum", "mainnet.conf"]
 
-#COPY bin/dummyapp.js dummyapp.js
-#CMD ["node", "dummyapp.js"]
+COPY bin/dummyapp.js dummyapp.js
+CMD ["node", "dummyapp.js"]
