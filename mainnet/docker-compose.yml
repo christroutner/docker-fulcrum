@@ -4,7 +4,7 @@ fulcrum-mainnet:
   container_name: fulcrum-mainnet
   volumes:
     #- /mnt/usb/fulcrum/mainnet-blockchain:/home/safeuser/blockchain
-    - /home/trout/tmp/data:/home/safeuser/blockchain
+    - /mnt/data/bitcoin.com/blockchain-data/fulcrum/mainnet/blockchain:/home/safeuser/blockchain
   ports:
     - 50001:50001
     - 50002:50002
