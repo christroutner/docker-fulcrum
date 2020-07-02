@@ -3,7 +3,8 @@ fulcrum-testnet:
   dockerfile: Dockerfile
   container_name: fulcrum-testnet
   volumes:
-    - /mnt/usb/fulcrum/testnet-blockchain:/home/safeuser/blockchain
+    #- /mnt/usb/fulcrum/testnet-blockchain:/home/safeuser/blockchain
+    - /mnt/data/bitcoin.com/blockchain-data/fulcrum/testnet/blockchain:/home/safeuser/blockchain
   ports:
     - 60001:50001
     - 60002:50002
