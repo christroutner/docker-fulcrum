@@ -8,3 +8,4 @@ fulcrum-testnet:
   ports:
     - 60001:50001
     - 60002:50002
+  restart: always

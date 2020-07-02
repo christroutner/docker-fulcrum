@@ -8,3 +8,4 @@ fulcrum-mainnet:
   ports:
     - 50001:50001
     - 50002:50002
+  restart: always
