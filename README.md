@@ -35,6 +35,6 @@ files: fullchain.pem (the public key and certificate) and privkey.pem (the
 private key).
 
 ### Build the Docker Container
-- Update the `docker-compose.yml` file with the path to where you want to store the blockchain.
+- Update the `docker-compose.yml` file with the path to where you want to store the blockchain data.
 - `docker-compose build`
 - `docker-compose up -d`
