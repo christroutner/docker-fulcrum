@@ -19,7 +19,7 @@ end up with two files: server.crt is the public key and certificate. server.key
 is the private key.
 
 - `sudo apt update`
-- `sudo apt install apt-get install openssl`
+- `sudo apt install openssl`
 - `openssl genrsa -des3 -out server.pass.key 2048`
 - `openssl rsa -in server.pass.key -out server.key`
 - `rm server.pass.key`
